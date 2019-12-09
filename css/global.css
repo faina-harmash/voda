@@ -1,0 +1,112 @@
+.container {
+  border: 1px solid yellow;
+}
+.col-lg-6 {
+  border: 1px solid green;
+}
+#block-1 {
+  background: linear-gradient(
+    180deg,
+    #4baee2 0%,
+    rgba(75, 174, 226, 0.5) 28.12%,
+    rgba(75, 174, 226, 0.5) 34.9%,
+    #4baee2 61.46%,
+    rgba(238, 241, 248, 0) 100%,
+    rgba(238, 241, 248, 0) 100%
+  );
+}
+.bl-1-h1 {
+  margin-top: 69px;
+}
+.bl-1-h1 h1 {
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 77px;
+  color: #ffffff;
+}
+.bl-1-p1 {
+  margin-top: 39px;
+}
+.bl-1-text {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 32px;
+  color: #ffffff;
+}
+.bl-1-button {
+  display: inline-block;
+  margin: 39px 0 20px;
+  padding: 17px 41px;
+  background: #ffffff;
+  border-radius: 16px;
+}
+.bl-1-button > a {
+  font-size: 26px;
+  line-height: 31px;
+  font-size: 26px;
+  line-height: 31px;
+  font-weight: bold;
+  text-decoration: none;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#49b2e3+0,4d74aa+100 */
+  background: #49b2e3; /* Old browsers */
+  background: -moz-linear-gradient(
+    left,
+    #49b2e3 0%,
+    #4d74aa 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    left,
+    #49b2e3 0%,
+    #4d74aa 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to right,
+    #49b2e3 0%,
+    #4d74aa 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#49b2e3', endColorstr='#4d74aa',GradientType=1 ); /* IE6-9 */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bottle-block {
+  position: relative;
+}
+.bottle-block > img {
+  position: absolute;
+  overflow: visible;
+}
+.txt-center {
+  text-align: center;
+}
+
+.our-benefits {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  margin-top: 80px;
+  color: #445071;
+}
+
+/*Block-2*/
+
+.bl-2-p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 155.5%;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #4F4F4F;
+}
+
+.bl-2-item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 59px;
+}
+.bl-2-text {
+    text-align: center;
+}
