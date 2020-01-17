@@ -97,7 +97,7 @@ let rate = +prompt("How much did you like the movie", "From 1 to 10");
 const message = getRecommendationSwitch(rate);
 alert(message);
 
-function getRecommendationSwitch(rateSwitch) {
+const getRecommendationSwitch = function(rateSwitch) {
   let numb = Math.floor(rateSwitch);
   switch (numb) {
     case 1:
@@ -123,17 +123,16 @@ function getRecommendationSwitch(rateSwitch) {
     default:
       return "Нужно ввести число от 1 до 10, для получения совета по фильму!";
   }
-}
+};
 
-//Написать функцию play, которая принимает 3 аргумента. Работать должна следующим образом:
-let length = 10;
-let phrase = "Боги джаваскрипта, сжальтесь";
-let startPhrase = 4;
+//Написать функцию play, которая принимает 3 аргумента. 
 
-console.log(length);
-for (let i = 1; i < length; i++) {
-  console.log(i);
-  if (i % period == 0) {
-    console.log(phrase);
+function play(length, phrase, startPhrase) {
+  for (let i = 1; i < length; i++) {
+    console.log(i);
+    if (i % 4 === 0) {
+      console.log(phrase);
+    }
   }
 }
+play(16, "Боги Джаваскрипта сжальтесь", 4);
