@@ -125,14 +125,155 @@ const getRecommendationSwitch = function(rateSwitch) {
   }
 };
 
-//Написать функцию play, которая принимает 3 аргумента. 
+//Написать функцию play, которая принимает 3 аргумента.
 
 function play(length, phrase, startPhrase) {
   for (let i = 1; i < length; i++) {
     console.log(i);
-    if (i % 4 === 0) {
+    if (i % startPhrase === 0) {
       console.log(phrase);
     }
   }
 }
+let errors = [];
 play(16, "Боги Джаваскрипта сжальтесь", 4);
+
+//Создать функцию которая принимает 1 аргумент - строку.
+//Функция должна возвращать строку в которой:
+//1. Между каждым символом стоит дефис.
+
+function transformString(sentense) {
+  const transform = sentense.split("");
+  const result = transform.join("-");
+  console.log(result);
+}
+transformString("Ладушки и варенье");
+
+//////////////
+let smak = "Ладушки и варенье";
+let transform = smak.split("");
+let result = transform.join("-");
+console.log(result);
+
+//2. Последнее слово написано большими буквами.
+
+let smak = "Ладушки и варенье";
+let transform = smak.split(" ");
+transform[transform.length - 1] = transform[transform.length - 1].toUpperCase();
+let result = transform.join(" ");
+let dashArray = result.split("").join("-") + "-";
+
+console.log(dashArray);
+
+//let spaceIndex = result.lastIndexOf("");
+
+//3. Advanced
+
+function phraseFormatter(phrase) {
+  let result = "";
+  let lastIndexOfSpace = phrase.lastIndexOf(" ");
+  for (let i = 0; i < phrase.length; i++) {
+    let currentSymbol = phrase.charAt(i);
+    if (i > lastIndexOfSpace) {
+      result = result.concat(currentSymbol.toUpperCase());
+    } else {
+      result = result.concat(currentSymbol);
+    }
+    result = result.concat("-");
+  }
+  return result;
+}
+
+let phrase = "Faini js monster";
+phraseFormatter(phrase);
+
+// to do function with 4 arguments (1-name,2-name,3-frequency of1, 4-frequency of2)
+//nameFrequency("Skorini", "Faini", 2, 3) -> SkoriniSkoriniFainiFainiFaini
+
+function nameFrequency(firstName, secondName, firstFrequency, secondFrequency) {
+  let result = "";
+  for (let i = 0; i < firstFrequency; i++) {
+    result = result.concat(firstName);
+  }
+  for (let i = 0; i < secondFrequency; i++) {
+    result = result.concat(secondName);
+  }
+  return result;
+}
+
+let firstName = "Honey";
+let secondName = "Milk";
+let firstFrequency = 5;
+let secondFrequency = 3;
+let result = nameFrequency(
+  firstName,
+  secondName,
+  firstFrequency,
+  secondFrequency
+);
+console.log(result);
+
+// func(firstName, secondName, separator) |  func("aa", "bb", "@") -> aa@bb |  func(String, String, String) -> String
+//try hard
+function emailAdress(firstName, secondName, separator) {
+  let result = firstName + separator + secondName;
+  return result;
+}
+let firstName = "Faina";
+let secondName = "Harmash";
+let separator = "@";
+let result = emailAdress(firstName, secondName, separator);
+console.log(result);
+
+//
+let firstName = "Faina";
+let secondName = "Harmash";
+let separator = "@";
+emailResult = firstName + separator + secondName;
+
+console.log(emailResult);
+
+//четные - маленькие буквы, нечетные - большие  func(String) -> String
+function lowerOrUpper(letters) {
+  let result = "";
+  for (i = 0; i < letters.length; i++) {
+    let currentLetter = letters.charAt(i);
+    if (i % 2 === 0) {
+      result = result.concat(currentLetter.toUpperCase());
+    } else {
+      result = result.concat(currentLetter.toLowerCase());
+    }
+  }
+
+  return result;
+}
+let letters = "javascript";
+lowerOrUpper(letters);
+
+/// 1 - 2firstletters and 2 - 2secondletters
+function getTogether(firstWord, secondWord) {
+  let result = "";
+  result = firstWord.slice(0, 2) + secondWord.slice(-2);
+
+  return result;
+}
+let firstWord = "Пташка";
+let secondWord = "Пiвник";
+getTogether(firstWord, secondWord);
+
+//// let the same but with if the word has less than two letters return whole word
+
+function getTogether(firstWord, secondWord) {
+  let result = "";
+  for (i = 0; i < firstWord.length; i++) {
+    if (firstWord.length < 2) {
+      result = firstWord + secondWord.slice(-2);
+    } else if (firstWord.length > 2) {
+      result = firstWord.slice(0, 2) + secondWord.slice(-2);
+    }
+  }
+  return result;
+}
+let firstWord = "ш";
+let secondWord = "Пiвник";
+getTogether(firstWord, secondWord);
