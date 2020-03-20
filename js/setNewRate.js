@@ -1,6 +1,6 @@
 /*Среднее значение по рейтингу */
 
-("use strict");
+"use strict";
 addRatePush(4);
 addRateConcat(7);
 

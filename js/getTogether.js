@@ -1,6 +1,6 @@
 /*1 - 2firstletters and 2 - 2secondletters*/
 
-("use strict");
+"use strict";
 function getTogether(firstWord, secondWord) {
   let result = "";
   result = firstWord.slice(0, 2) + secondWord.slice(-2);

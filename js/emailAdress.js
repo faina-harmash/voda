@@ -1,6 +1,6 @@
 /*func(firstName, secondName, separator) |  func("aa", "bb", "@") -> aa@bb |  func(String, String, String) -> String*/
 
-("use strict");
+"use strict";
 function emailAdress(firstName, secondName, separator) {
   let result = firstName + separator + secondName;
   return result;

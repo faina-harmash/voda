@@ -1,6 +1,6 @@
 /* 1. Создать функцию которая принимает в качестве аргумента рейтинг, а возвращает строку с сообщением.*/
 
-("use strict");
+"use strict";
 let rate = prompt("How much did you like the movie", "10");
 function getRecommendation(rate) {
   if (rate == 1) {

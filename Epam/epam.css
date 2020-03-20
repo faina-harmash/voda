@@ -1,0 +1,20 @@
+/*Будет синий, ибо цвет наследуется*/
+ul {
+  color: red;
+}
+li {
+  color: blue;
+}
+/*Neither = margin-bottom оставляет р на месте, 
+но другой бы элемент на него мог бы сдвинутся считая, что он занимает меньше места*/
+#example {
+  margin-bottom: -5px;
+}
+
+@media only screen and (max-width: 1024px) {
+    margin: 0;
+}
+
+/* stops older browsers from parsing the remainder of the selctor */
+/* Apply that style for "screen" only and ignore device "max-width" */
+/* It does nothing */

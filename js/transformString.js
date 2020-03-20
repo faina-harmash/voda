@@ -3,7 +3,7 @@
 //1. Между каждым символом стоит дефис.
 //Vlad HW.
 
-("use strict");
+"use strict";
 function transformString(sentense) {
     const transform = sentense.split("");
     const result = transform.join("-");

@@ -1,9 +1,4 @@
-/*Написать функцию makeCard. 
-Она принимает 3 аргумента и возвращает объект как на скриншоте.
-Месяц должен быть выбран случайно при запуске функции и всегда состоять из двух чисел. 
-Год должен быть выбран случайно из таких чисел 30, 29, 28, 34.
-CVV должен всегда состоять из 3 чисел и быть случайным.
-Если в функцию не передать имени и фамилии она будет без имени.*/
+"use strict";
 
 function makeCard(cardType, firstName, secondName) {
   let cardInfo = {};
@@ -50,7 +45,7 @@ function randomMonth() {
   let month = "month";
   month = randomNumber(1, 12);
   if (randomNumber < 10) {
-    return 0 + month;
+    return 0 + String(month);
   } else {
     return month;
   }

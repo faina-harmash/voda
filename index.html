@@ -6,7 +6,10 @@
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
     <script src="js/index.js"></script>
-    <script src="js/film.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Exo+2:400,500,600|Montserrat:400,500,600|amily=Cardo:400i|Exo:400,500|Open+Sans:700|Raleway:400,600,700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="shortcut icon"
       href="./images/Фавикон VodaExpress 16_16.png"
@@ -16,7 +19,46 @@
   <body>
     <!--NAVIGATION-->
 
-    <header></header>
+    <header>
+      <div class="main-nav">
+        <div class="logo-position">
+          <img src="images/navigation/Лого.svg" />
+        </div>
+        <div>
+          <div class="middle-nav">
+            <div class="middle-right-nav">
+              <p class="p-nawigation">Головна</p>
+              <p class="p-nawigation">Про нас</p>
+              <p class="p-nawigation">Вода</p>
+              <p class="p-nawigation">Зона доставки</p>
+              <p class="p-nawigation">Контакти</p>
+            </div>
+            <div class="middle-left-nav">
+              <p class="p-nawigation__grafik">
+                Графік роботи:<br />Щоденно з 9:00 до 21:00
+              </p>
+            </div>
+            <button class="blue-button">Замовити воду</button>
+          </div>
+        </div>
+        <div class="right-navigation">
+          <div class="orange-stripe"></div>
+          <select class="select-object">
+            <option>UK</option>
+            <option>RU</option>
+          </select>
+          <div class="phone-img">
+            <img src="images/navigation/telephone.svg" />
+          </div>
+          <select class="select-object">
+            <option>(044) 365-45-60</option>
+            <option>(068) 777 45 60</option>
+            <option>(063) 777 45 60</option>
+            <option>(066) 777 45 60</option>
+          </select>
+        </div>
+      </div>
+    </header>
     <!--Block-1-->
 
     <div id="block-1">
@@ -38,13 +80,16 @@
             <img src="images/bottles.png" />
           </div>
           <div class="col-lg-12 txt-center">
-            <h2 class="our-benefits">Наши переваги</h2>
+            <h2 class="our-benefits">Нашi переваги</h2>
+            <div class="stripe-position">
+              <div class="horizontal-stripe"></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <!--Block-2-->
-    <div id="block-2">
+    <div id="block-2" class="b2-margin">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 offset-lg-2">
@@ -65,7 +110,9 @@
           </div>
           <div class="col-lg-6">
             <div class="bl-2-item">
-              <div><img src="images/free-delivery.png" alt="free-delivery" /></div>
+              <div>
+                <img src="images/free-delivery.png" alt="free-delivery" />
+              </div>
               <div class="bl-2-text">
                 Безкоштовна доставка води від 1 бутля
               </div>
@@ -73,7 +120,9 @@
           </div>
           <div class="col-lg-3">
             <div class="bl-2-item">
-              <div><img src="images/ring.png" alt="7/365" /></div>
+              <div class="ring"><img src="images/ring.png" alt="7/365" />
+                <div class="ring_number"><div>7</div><div class="hyphen">-</div> <div>365</div></div>
+              </div>
               <div class="bl-2-text">
                 Доставка 7 днів на тиждень
               </div>
@@ -82,5 +131,255 @@
         </div>
       </div>
     </div>
+    <!--Block-3-->
+
+    <div id="block-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 txt-center">
+            <h2 class="b31-title">Хімічний склад води Оазис</h2>
+            <div class="stripe-position">
+              <div class="horizontal-stripe"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="bottle-direction">
+              <img src="images/bottle.png" class="bottle-parameters" />
+              <!-- Right elements -->
+               <div class="pH-position"><span class="elements">pH</span></div>
+              <div class="first_number__left">
+                <span class="e-numbers">7,15</span>
+              </div>
+              <div class="Na-position"><span class="elements">Na</span></div>
+              <div class="ua_el_Na"><span class="ua_el">Натрій</span></div>
+              <div class="second_number__left">
+                <span class="e-numbers">3,26 мг/дм3</span>
+              </div>
+              <div class="Ca-position"><span class="elements">Ca</span></div>
+              <div class="ua_el_Ca"><span class="ua_el">Кальцій</span></div>
+              <div class="third_number__left">
+                <span class="e-numbers">>100 мг/дм3</span>
+              </div>
+              <!-- Right elements -->
+              <div class="miniral-position"><span>Общая</br>
+                  минерализация</span></div>
+              <div class="first_number__right">
+                  <span class="e-numbers">100-300 мг/ дм3</span>
+                </div>
+              <div class="K-position"><span class="elements">K</span></div>
+              <div class="ua_el_K"><span class="ua_el">Калій</span></div>
+              <div class="second_number__right">
+                  <span class="e-numbers">0,474 мг/дм3</span>
+                </div>
+              <div class="Mg-position"><span class="elements">Mg</span></div>
+              <div class="ua_el_Mg"><span class="ua_el">Магній</span></div>
+              <div class="third_number__right">
+                  <span class="e-numbers">0,24 мг/дм3
+                  </span>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!--Block-4-->
+    <div id="block-4" class="b4-margin">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 txt-center">
+            <h5 class="orange-text">Коротко про нас</h5>
+            <h2 class="b4-title">Вода Оазис</h2>
+            <div class="stripe-position">
+              <div class="horizontal-stripe"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2">
+            <div class="bl-2-p">
+              Компанія Voda Експресс рада представити себе в якості нового
+              учасника ринку з доставки бутильованої води в місті Київ. Доставка
+              здійснюється щодня протягом 2-х годин.
+            </div>
+          </div>
+          <!--Block-4-part-2-->
+          <div class="col-lg-3">
+            <div class="bl-2-item">
+              <div>
+                <img
+                  src="images/block4/8steps.png"
+                  alt="8 steps to clean the water"
+                />
+              </div>
+              <div class="bl-2-text">
+                8 этапів очистки води
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="bl-2-item">
+              <div>
+                <img src="images/block4/kusen.png" alt="kusen" />
+              </div>
+              <div class="bl-2-text">
+                Збагачення киснем
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="bl-2-item">
+              <div><img src="images/block4/garantia.png" alt="quality" /></div>
+              <div class="bl-2-text">
+                Гарантія якості
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="bl-2-item">
+              <div><img src="images/block4/skwazina.png" alt="skwazina" /></div>
+              <div class="bl-2-text">
+                Скважина юрского горизонту 293м.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      
+      <!--Block 5-->
+
+      <!--Delivery-->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 txt-center">
+            <h5 class="orange-text">Зона доставки</h5>
+            <h2 class="b3-title">Доставляємо воду в будь-яку точку міста Київ</h2>
+            <div class="stripe-position">
+              <div class="horizontal-stripe"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Delivery-->
+      
+          <div class="karta">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162757.72582760116!2d30.392608836420333!3d50.40217023835161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2sKyiv%2C%2002000!5e0!3m2!1sen!2sua!4v1580397936247!5m2!1sen!2sua"
+              width="100%"
+              height="556px"
+              frameborder="0"
+              style="border:0;"
+              allowfullscreen=""
+            ></iframe>
+          </div>
+        
+  
+      <!--Block-4-->
+      <div id="block-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 txt-center">
+              <h2 class="our-benefits">Зробіть Ваше замовлення вже зараз</h2>
+              <div class="stripe-position">
+                <div class="horizontal-stripe"></div>
+              </div>
+            </div>
+
+
+
+ <div class="col-lg-8 offset-lg-2">
+              <div class="col-lg-10 offset-lg-1">
+                <div class="bl-2-p">
+                  <p class="pmt">
+                    Наші оператори завжди готові прийняти Ваше замовлення, а кур’єри
+                    - доставити його протягом 2-х годин
+                  </p>
+                </div>
+              </div>
+ </div>
+
+
+
+
+          </div>
+        </div>
+      </div>
+      <!--Block-4-buttons-->
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-8 offset-lg-2"
+            style="display: flex;
+            justify-content: space-evenly; margin-top:30px;"
+          >
+            <div style="
+            width: 300px;
+        ">
+              <div class="bl-4-button">
+                <a href="#">Замовити на сайті</a>
+              </div>
+
+            </div>
+            <!-- <div class="stripe-position"> -->
+            <div class="vertical-stripe"></div>
+            <!-- </div> -->
+            <div style="
+            width: 300px;
+        ">
+              <div class="bl-4-button">
+                <a href="#">(044) 365-45-60</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Footer-->
+      <div id="footer" class="footer-color">
+        <div class="container">
+          <div class="row justify-space-around">
+            <!--1-Footer-->
+            <div class="col-lg-4">
+              <img src="images/footer/Лого.png" />
+            </div>
+            <!--2-Footer-->
+            <div class="col-lg-4 align-content-center pr-0 pl-0">
+              <div class="midle-block d-flex justify-content-center"><p class="footer-text">Щоденно з 9:00 до 21:00</p></div>
+              <div class="media d-flex justify-content-center">
+                <div class="media-padding"><img src="images/footer/facebook.png" /></div>
+                <div><img src="images/footer/Instagram.png" /></div>
+              </div>
+              <div class="midle-block d-flex justify-content-center">
+                <p class="footer-text">Сертифікат відповідності</p>
+              </div>
+              <div class="midle-block d-flex justify-content-center">
+                <p class="footer-text">Договір-оферта</p>
+              </div>
+            </div>
+            
+            <!--3-Footer-->
+            <div class="col-lg-4 d-flex">
+              <div class="phone-img2">
+                <img src="images/navigation/telephone.svg" />
+              </div>
+              <div class="footer-text">
+                <p>(044) 365 45 60</p>
+                <p>(068) 777 45 60</p>
+                <p>(063) 777 45 60</p>
+                <p>(066) 777 45 60</p>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---->
+
+    <!--End-Block-->
   </body>
 </html>

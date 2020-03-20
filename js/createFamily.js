@@ -1,35 +1,23 @@
+"use strict";
 
-  if (typeof wife !== "string" || typeof husband !== "string") {
-    let errorMessage =
-      "Please use letters for all fields. Your input is Incorrect!";
-    return errorMessage;
-  } else {
-    return family;
-
-//
-
-("use strict");
 function createFamily(wife, husband) {
+  if (typeof wife !== "string" || typeof husband !== "string") {
     
-  let family = {
-    wife: wife.trim(),
-    husband: husband.trim(),
+    return "Please use letters for all fields. Your input is Incorrect!";
+  }
+
+  return {
+    wife,
+    husband,
     children: [],
     makeChild: function makeChild(name) {
       let children = {
-        name: name,
+        name,
         parents: `${this.wife} and ${this.husband}`
       };
       this.children.push(children);
     }
   };
-  if (typeof wife !== "string" || typeof husband !== "string") {
-    let errorMessage =
-      "Please use letters for all fields. Your input is Incorrect!";
-    return errorMessage;
-  } else{
-  return family;
-  }
 }
 let family = createFamily("Sisi", "John");
 family.makeChild("Fedor");

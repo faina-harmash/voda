@@ -1,6 +1,6 @@
 /*четные - маленькие буквы, нечетные - большие  func(String) -> String*/
 
-("use strict");
+"use strict";
 function lowerOrUpper(letters) {
   let result = "";
   for (i = 0; i < letters.length; i++) {

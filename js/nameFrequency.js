@@ -1,7 +1,7 @@
 /*to do function with 4 arguments (1-name,2-name,3-frequency of1, 4-frequency of2)
 nameFrequency("Skorini", "Faini", 2, 3) -> SkoriniSkoriniFainiFainiFaini*/
 
-("use strict");
+"use strict";
 function nameFrequency(firstName, secondName, firstFrequency, secondFrequency) {
     let result = "";
     for (let i = 0; i < firstFrequency; i++) {
