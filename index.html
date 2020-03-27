@@ -2,17 +2,18 @@
 <html lang="uk-UA">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Оперативна доставка води в бутлях">
     <title>voda.express</title>
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
-    <script src="js/index.js"></script>
     <link
       href="https://fonts.googleapis.com/css?family=Exo+2:400,500,600|Montserrat:400,500,600|amily=Cardo:400i|Exo:400,500|Open+Sans:700|Raleway:400,600,700&display=swap"
       rel="stylesheet"
     />
     <link
       rel="shortcut icon"
-      href="./images/Фавикон VodaExpress 16_16.png"
+      href="src/icon/icon.png"
       type="image/png"
     />
   </head>
@@ -24,14 +25,31 @@
         <div class="logo-position">
           <img src="images/navigation/Лого.svg" />
         </div>
-        <div>
+        <!-- STRIPES -->
+        <div class="dropdown">
+          <button class="navbar-toggler" 
+          type="button" 
+          data-toggle="collapse" 
+          data-target="#main_menu"
+          aria-controls="main_menu"
+          aria-expandet="false"
+          aria-label="Toggle navigation"> 
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+        <!-- End STRIPES -->
+        <div class="navbar-collapse collapse" id="main_menu">
+
+
           <div class="middle-nav">
             <div class="middle-right-nav">
-              <p class="p-nawigation">Головна</p>
-              <p class="p-nawigation">Про нас</p>
-              <p class="p-nawigation">Вода</p>
-              <p class="p-nawigation">Зона доставки</p>
-              <p class="p-nawigation">Контакти</p>
+              <a href=#block-1 class="p-nawigation">Головна</a>
+              <a href=#block-2 class="p-nawigation d-md-inline d-none d-lg-none">Про нас</a>
+              <a href=#block-3 class="p-nawigation">Вода</a>
+              <a href=#karta class="p-nawigation">Зона доставки</a>
+              <a href=#block-5 class="p-nawigation">Контакти</a>
             </div>
             <div class="middle-left-nav">
               <p class="p-nawigation__grafik">
@@ -39,8 +57,10 @@
               </p>
             </div>
             <button class="blue-button">Замовити воду</button>
-          </div>
-        </div>
+          
+        
+
+
         <div class="right-navigation">
           <div class="orange-stripe"></div>
           <select class="select-object">
@@ -57,6 +77,8 @@
             <option>(066) 777 45 60</option>
           </select>
         </div>
+      </div>
+      </div>
       </div>
     </header>
     <!--Block-1-->
@@ -80,7 +102,7 @@
             <img src="images/bottles.png" />
           </div>
           <div class="col-lg-12 txt-center">
-            <h2 class="our-benefits">Нашi переваги</h2>
+            <h2 class="our-benefits" id="block-2">Нашi переваги</h2>
             <div class="stripe-position">
               <div class="horizontal-stripe"></div>
             </div>
@@ -89,7 +111,7 @@
       </div>
     </div>
     <!--Block-2-->
-    <div id="block-2" class="b2-margin">
+    <div class="b2-margin">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 offset-lg-2">
@@ -136,8 +158,9 @@
     <div id="block-3">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 txt-center">
-            <h2 class="b31-title">Хімічний склад води Оазис</h2>
+          <div class="col-lg-12 txt-center mt-md-5 mt-1">
+            <h2>Хімічний склад води Оазис</h2>
+            <!-- class="b31-title" -->
             <div class="stripe-position">
               <div class="horizontal-stripe"></div>
             </div>
@@ -163,8 +186,8 @@
                 <span class="e-numbers">>100 мг/дм3</span>
               </div>
               <!-- Right elements -->
-              <div class="miniral-position"><span>Общая</br>
-                  минерализация</span></div>
+              <div class="miniral-position"><span>Загальна</br>
+                  мінералізація</span></div>
               <div class="first_number__right">
                   <span class="e-numbers">100-300 мг/ дм3</span>
                 </div>
@@ -256,7 +279,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 txt-center">
-            <h5 class="orange-text">Зона доставки</h5>
+            <h5 class="orange-text" id="karta">Зона доставки</h5>
             <h2 class="b3-title">Доставляємо воду в будь-яку точку міста Київ</h2>
             <div class="stripe-position">
               <div class="horizontal-stripe"></div>
@@ -381,5 +404,8 @@
     <!---->
 
     <!--End-Block-->
+    <script src="voda_js/jquery.js"></script>
+    <script src="voda_js/bootstrap.bundle.js"></script>
   </body>
+  
 </html>
