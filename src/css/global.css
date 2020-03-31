@@ -33,13 +33,26 @@ li a {
   justify-content: space-between;
   align-items: center;
   background-color: whitesmoke;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  flex-wrap: wrap;
 }
 .logo-position {
   margin-left: 25px;
 }
+.navbar-toggler {
+  visibility: hidden;
+}
 /* .collapse navbar-collapse {
   display:flex;
 } */
+.navbar-collapse {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex-grow: 1;
+}
 
 .middle-nav {
   display: flex;
@@ -204,13 +217,11 @@ li a {
   font-family: "Exo 2";
   font-weight: 700;
   color: #445071;
-    
 }
 /*--Block-2--*/
 .b2-margin {
   margin-bottom: 150px;
 }
-
 
 /*--Block-1--*/
 .bl-1-h1 {
@@ -247,21 +258,9 @@ li a {
   text-decoration: none;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#49b2e3+0,4d74aa+100 */
   background: #49b2e3; /* Old browsers */
-  background: -moz-linear-gradient(
-    left,
-    #49b2e3 0%,
-    #4d74aa 100%
-  ); 
-  background: -webkit-linear-gradient(
-    left,
-    #49b2e3 0%,
-    #4d74aa 100%
-  ); 
-  background: linear-gradient(
-    to right,
-    #49b2e3 0%,
-    #4d74aa 100%
-  ); 
+  background: -moz-linear-gradient(left, #49b2e3 0%, #4d74aa 100%);
+  background: -webkit-linear-gradient(left, #49b2e3 0%, #4d74aa 100%);
+  background: linear-gradient(to right, #49b2e3 0%, #4d74aa 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#49b2e3', endColorstr='#4d74aa',GradientType=1 ); /* IE6-9 */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -509,7 +508,6 @@ li a {
   margin-bottom: 10px;
 }
 
-
 /*--Block-4--*/
 .b4-margin {
   margin-top: 100px;
@@ -601,57 +599,219 @@ li a {
 }
 
 /* MEDIA */
-@media (max-width:1024px) {
- /* Navigation */
- .navbar-toggler {
-  padding: .25rem .75rem;
-  font-size: 1.25rem;
-  line-height: 1;
-  background-color: transparent;
-  border: 1px solid transparent;
-  border-radius: .25rem;
-}
+@media (max-width: 1024px) {
+  /* Navigation */
+  .navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    visibility: visible;
+  }
 
-.navbar-toggler:not(:disabled):not(.disabled) {
-  cursor: pointer;
-}
-.navbar-toggler-icon {
-   background-image: none;
-   width: 29px;
-   height: 6px;
-   border-radius: 12px;
-   background-color: #4baee2;
-   display: block;
-   margin-bottom: 5px; 
- }
+  .navbar-toggler:not(:disabled):not(.disabled) {
+    cursor: pointer;
+  }
+  .navbar-toggler-icon {
+    background-image: none;
+    width: 29px;
+    height: 6px;
+    border-radius: 12px;
+    background-color: #4baee2;
+    display: block;
+    margin-bottom: 5px;
+  }
 
-.navbar-toggler:not(:disabled):not(.disabled) {
-  cursor: pointer;
-}
-.navbar-toggler:focus, .navbar-toggler:hover {
-  text-decoration: none;
-}
-.navbar-collapse {
-  display: flex;
-}
-.collapse {
-display: none;
-}
-.collapse.show {
-  display: block;
-}
+  .navbar-toggler:not(:disabled):not(.disabled) {
+    cursor: pointer;
+  }
+  .navbar-toggler:focus,
+  .navbar-toggler:hover {
+    text-decoration: none;
+  }
+  .navbar-collapse {
+    display: flex;
+    flex-basis: 100%;
+    flex-grow: 1;
+  }
+  .collapse {
+    display: none;
+  }
+  .collapse.show {
+    display: block;
+  }
 
-/* Block 1 */
-.bottle-block > img {
-  width: 450px;
-  height: 400px;
+  /* Block 1 */
+  .bottle-block > img {
+    width: 450px;
+    height: 400px;
+  }
+  /* Voda */
+  .bottle-direction {
+    min-width: 920px;
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+  }
 }
-/* Voda */
-.bottle-direction {
-  min-width: 920px;
-  transform: scale(0.8);
-  transition: transform 0.3s ease;
-}
+/* MAX-WIDTH 768 MD*/
+@media (max-width: 768px) {
+  .bottle-block {
+    display: flex;
+    justify-content: center;
+  }
+  .bottle-block > img {
+    position: relative;
+  }
+  .bottle-direction {
+    min-width: 100%;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+  }
+  .elements {
+    width: 90px;
+    height: 38px;
+    font-family: "Exo 2";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    color: #445071;
+  }
+  .e-numbers {
+    width: 45px;
+    height: 22px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 155.5%;
+    letter-spacing: -0.01em;
+    color: #ffffff;
+  }
+  /* Left elements */
+  .pH-position {
+    position: absolute;
+    left: 5px;
+    top: 80px;
+  }
+  .Na-position {
+    position: absolute;
+    left: 5px;
+    top: 160px;
+  }
+  .Ca-position {
+    position: absolute;
+    left: 5px;
+    top: 270px;
+  }
 
-}
+  .first_number__left {
+    position: absolute;
+    left: 5px;
+    top: 135px;
+  }
+  .second_number__left {
+    position: absolute;
+    left: 5px;
+    top: 245px;
+  }
+  .third_number__left {
+    position: absolute;
+    left: 5px;
+    top: 360px;
+  }
+  /* Right elements */
+  .miniral-position {
+    position: absolute;
+    left: 470px;
+    top: 90px;
+    width: 219px;
+    height: 44px;
+    font-family: "Exo 2";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    color: #445071;
+  }
+  .K-position {
+    position: absolute;
+    left: 665px;
+    top: 170px;
+  }
+  .Mg-position {
+    position: absolute;
+    left: 640px;
+    top: 270px;
+  }
+  .first_number__right {
+    position: absolute;
+    left: 570px;
+    top: 155px;
+  }
+  .second_number__right {
+    position: absolute;
+    left: 590px;
+    top: 240px;
+  }
+  .third_number__right {
+    position: absolute;
+    left: 605px;
+    top: 355px;
+  }
 
+  /* Ua elements */
+  .ua_el {
+    width: 103px;
+    height: 28px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 155.5%;
+    letter-spacing: -0.01em;
+    color: #445071;
+  }
+  .ua_el_Na {
+    position: absolute;
+    left: 5px;
+    top: 210px;
+  }
+  .ua_el_Ca {
+    position: absolute;
+    left: 5px;
+    top: 330px;
+  }
+  .ua_el_K {
+    position: absolute;
+    left: 630px;
+    top: 220px;
+  }
+  .ua_el_Mg {
+    position: absolute;
+    left: 620px;
+    top: 330px;
+  }
+  .b31-title {
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    color: #445071;
+    font-family: "Exo 2";
+    margin-top: 100px;
+    margin-bottom: 10px;
+  }
+  .b3-title {
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    color: #445071;
+    font-family: "Exo 2";
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+}
+/* END OF MAX-WIDTH 768 */
