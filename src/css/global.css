@@ -4,13 +4,21 @@
   box-sizing: border-box;
 }
 
-.container {
-  /* border: 1px solid yellow; */
+.body {
+  margin-top: 0px;
 }
+
 a {
   text-decoration: none;
 }
 h1 {
+  font-family: "Exo 2";
+}
+h2 {
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+  color: #445071;
   font-family: "Exo 2";
 }
 #block-1 {
@@ -262,7 +270,7 @@ li a {
   background: -webkit-linear-gradient(left, #49b2e3 0%, #4d74aa 100%);
   background: linear-gradient(to right, #49b2e3 0%, #4d74aa 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#49b2e3', endColorstr='#4d74aa',GradientType=1 ); /* IE6-9 */
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
 }
 
@@ -273,20 +281,13 @@ li a {
 .bottle-block > img {
   position: absolute;
   overflow: visible;
-  margin-top: 50px;
 }
 .txt-center {
   text-align: center;
 }
 
 .our-benefits {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 43px;
-  text-align: center;
   margin-top: 120px;
-  color: #445071;
-  font-family: "Exo 2";
 }
 
 /*Block-2*/
@@ -314,7 +315,7 @@ li a {
   text-align: center;
   font-size: 20px;
   line-height: 24px;
-  font-family: "exo";
+  font-family: "Exo 2";
   font-weight: 700;
   color: #445071;
 }
@@ -341,7 +342,13 @@ li a {
 .hyphen {
   color: #ffa21d;
 }
+/*--Block 3 sm--*/
+.voda_responsive {
+  width: 100%;
+}
+
 /*--Block-3--*/
+
 #block-3 {
   background: linear-gradient(
     180deg,
@@ -366,7 +373,7 @@ li a {
 .elements {
   width: 90px;
   height: 58px;
-  font-family: "exo";
+  font-family: "Exo";
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -499,11 +506,6 @@ li a {
   margin-bottom: 10px;
 }
 .b3-title {
-  font-weight: bold;
-  font-size: 36px;
-  text-align: center;
-  color: #445071;
-  font-family: "Exo 2";
   margin-top: 0px;
   margin-bottom: 10px;
 }
@@ -521,11 +523,6 @@ li a {
   margin-bottom: 160px;
 }
 .b4-title {
-  font-weight: bold;
-  font-size: 36px;
-  text-align: center;
-  color: #445071;
-  font-family: "Exo 2";
   margin-top: 0px;
 }
 .bl-4-button {
@@ -587,7 +584,6 @@ li a {
 
 .phone-img2 {
   margin-right: 15px;
-  margin-top: 30px;
 }
 .footer-text {
   font-family: "Exo 2";
@@ -669,132 +665,7 @@ li a {
     transform: scale(0.9);
     transition: transform 0.3s ease;
   }
-  .elements {
-    width: 90px;
-    height: 38px;
-    font-family: "Exo 2";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 38px;
-    color: #445071;
-  }
-  .e-numbers {
-    width: 45px;
-    height: 22px;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 155.5%;
-    letter-spacing: -0.01em;
-    color: #ffffff;
-  }
-  /* Left elements */
-  .pH-position {
-    position: absolute;
-    left: 5px;
-    top: 80px;
-  }
-  .Na-position {
-    position: absolute;
-    left: 5px;
-    top: 160px;
-  }
-  .Ca-position {
-    position: absolute;
-    left: 5px;
-    top: 270px;
-  }
 
-  .first_number__left {
-    position: absolute;
-    left: 5px;
-    top: 135px;
-  }
-  .second_number__left {
-    position: absolute;
-    left: 5px;
-    top: 245px;
-  }
-  .third_number__left {
-    position: absolute;
-    left: 5px;
-    top: 360px;
-  }
-  /* Right elements */
-  .miniral-position {
-    position: absolute;
-    left: 470px;
-    top: 90px;
-    width: 219px;
-    height: 44px;
-    font-family: "Exo 2";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: right;
-    color: #445071;
-  }
-  .K-position {
-    position: absolute;
-    left: 665px;
-    top: 170px;
-  }
-  .Mg-position {
-    position: absolute;
-    left: 640px;
-    top: 270px;
-  }
-  .first_number__right {
-    position: absolute;
-    left: 570px;
-    top: 155px;
-  }
-  .second_number__right {
-    position: absolute;
-    left: 590px;
-    top: 240px;
-  }
-  .third_number__right {
-    position: absolute;
-    left: 605px;
-    top: 355px;
-  }
-
-  /* Ua elements */
-  .ua_el {
-    width: 103px;
-    height: 28px;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 155.5%;
-    letter-spacing: -0.01em;
-    color: #445071;
-  }
-  .ua_el_Na {
-    position: absolute;
-    left: 5px;
-    top: 210px;
-  }
-  .ua_el_Ca {
-    position: absolute;
-    left: 5px;
-    top: 330px;
-  }
-  .ua_el_K {
-    position: absolute;
-    left: 630px;
-    top: 220px;
-  }
-  .ua_el_Mg {
-    position: absolute;
-    left: 620px;
-    top: 330px;
-  }
   .b31-title {
     font-weight: bold;
     font-size: 36px;
@@ -805,13 +676,72 @@ li a {
     margin-bottom: 10px;
   }
   .b3-title {
-    font-weight: bold;
-    font-size: 36px;
-    text-align: center;
-    color: #445071;
-    font-family: "Exo 2";
     margin-top: 0px;
     margin-bottom: 10px;
   }
 }
 /* END OF MAX-WIDTH 768 */
+
+/* MAX-WIDTH 425 */
+@media (max-width: 425px) {
+  h2 {
+    line-height: 29px;
+    font-size: 24px;
+    text-align: center;
+    color: #445071;
+    font-family: "Exo 2";
+  }
+  .orange-text {
+    font-size: 15px;
+    line-height: 14px;
+    margin-top: 0px;
+  }
+  .our-benefits {
+    margin-top: 20px;
+  }
+  .b2-margin {
+    margin-bottom: 50px;
+  }
+  .bl-2-text {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  /* Block 1 */
+  .bl-1-h1 {
+    padding-top: 10px;
+  }
+  .bl-1-h1 h1 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+  }
+  .bl-1-text {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .bottle-block > img {
+    width: fit-content;
+    height: fit-content;
+  }
+  /* Block 4 button */
+  .bl-4-button {
+    padding: 15px 15px;
+    border-radius: 8px;
+  }
+  .bl-4-button > a {
+    font-size: 26px;
+    line-height: 31px;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 600;
+  }
+  .b4-margin {
+    margin-top: 100px;
+    margin-bottom: 80px;
+  }
+  .karta {
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+}

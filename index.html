@@ -5,19 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Оперативна доставка води в бутлях">
     <title>voda.express</title>
-    <link rel="stylesheet" href="src/css/global.css" />
+    
     <link rel="stylesheet" href="src/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link
       href="https://fonts.googleapis.com/css?family=Exo+2:400,500,600|Montserrat:400,500,600|amily=Cardo:400i|Exo:400,500|Open+Sans:700|Raleway:400,600,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="src/css/global.css" />
     <link
       rel="shortcut icon"
       href="src/icon/icon.png"
       type="image/png"
     />
   </head>
-  <body>
+  <body class="body">
     <!--NAVIGATION-->
 
     <header>
@@ -86,20 +89,23 @@
     <div id="block-1">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6 mt-5">
             <div class="bl-1-h1">
               <h1>Экспрес доставка води по місту Київ</h1>
             </div>
             <div class="bl-1-p1">
-              <img src="src/img/fast-delivery.png" alt="car" />
+              <img src="src/img/fast-delivery.png" alt="car" class="d-xl-block d-lg-block d-md-block d-none" />
               <div class="bl-1-text">
                 Протягом 2-х годин після оформлення замовлення
               </div>
             </div>
-            <div class="bl-1-button"><a href="#">Замовити воду</a></div>
+            <div class="bl-1-button d-xl-block d-lg-block d-md-block d-none">
+              <a href="#">Замовити воду</a>
+            </div>
           </div>
-          <div class="col-lg-6 bottle-block">
-            <img src="src/img/bottles.png" />
+          <div class="col-lg-6 bottle-block mt-5">
+            <img src="src/img/bottles.png" class="d-xl-block d-lg-block d-md-block d-none"/>
+            <img src="src/img/voda_mobile.png" class="d-xl-none d-lg-none d-md-none d-block"/>
           </div>
           <div class="col-lg-12 txt-center">
             <h2 class="our-benefits" id="block-2">Нашi переваги</h2>
@@ -156,7 +162,7 @@
     <!--Block-3-->
 
     <div id="block-3">
-      <div class="container">
+      <div class="container d-none">
         <div class="row">
           <div class="col-lg-12 txt-center mt-md-5 mt-1">
             <h2>Хімічний склад води Оазис</h2>
@@ -170,7 +176,7 @@
           <div class="col-xl-10 col-lg-12 col-md-12">
             <div class="bottle-direction">
               <img src="src/img/bottle.png" class="bottle-parameters" />
-              <!-- Right elements -->
+              <!-- Left elements -->
                <div class="pH-position"><span class="elements">pH</span></div>
               <div class="first_number__left">
                 <span class="e-numbers">7,15</span>
@@ -208,6 +214,16 @@
       </div>
     </div>
   </div>
+  <!-- SM Block3 -->
+  <div id="block-3xl" class="d-xl-block d-lg-none d-md-none d-sm-none d-none">
+        <img src="src/img/voda_xl.png" class="voda_responsive">
+  </div>
+  <div id="block-3lg" class="d-xl-none d-lg-block d-md-none d-sm-none d-none">
+     <img src="src/img/voda_lg.png" class="voda_responsive">
+ </div>
+ <div id="block-3md" class="d-xl-none d-lg-none d-md-block d-sm-none d-block">
+  <img src="src/img/voda_md.png" class="voda_responsive">
+ </div>
     <!--Block-4-->
     <div id="block-4" class="b4-margin">
       <div class="container">
@@ -302,7 +318,7 @@
           </div>
         
   
-      <!--Block-4-->
+      <!--Block-5-->
       <div id="block-5">
         <div class="container">
           <div class="row">
@@ -336,13 +352,11 @@
       <div class="container">
         <div class="row">
           <div
-            class="col-lg-8 offset-lg-2"
+            class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 col-sm-12"
             style="display: flex;
             justify-content: space-evenly; margin-top:30px;"
           >
-            <div style="
-            width: 300px;
-        ">
+            <div style>
               <div class="bl-4-button">
                 <a href="#">Замовити на сайті</a>
               </div>
@@ -351,9 +365,7 @@
             <!-- <div class="stripe-position"> -->
             <div class="vertical-stripe"></div>
             <!-- </div> -->
-            <div style="
-            width: 300px;
-        ">
+            <div>
               <div class="bl-4-button">
                 <a href="#">(044) 365-45-60</a>
               </div>
@@ -366,11 +378,11 @@
         <div class="container">
           <div class="row justify-space-around">
             <!--1-Footer-->
-            <div class="col-lg-4 col-md-6 align-content-center">
+            <div class="col-lg-4 col-md-6 align-content-center d-sm-block d-none">
               <img src="src/img/footer_logo.png" />
             </div>
             <!--2-Footer-->
-            <div class="col-lg-4 align-content-center pr-0 pl-0 col-md-6">
+            <div class="col-lg-4 align-content-center col-md-6 mt-3">
               <div class="midle-block d-flex justify-content-center">
                 <p class="footer-text">Щоденно з 9:00 до 21:00</p>
               </div>
@@ -378,20 +390,20 @@
                 <div class="media-padding"><img src="src/img/facebook.png" /></div>
                 <div><img src="src/img/instagram.png" /></div>
               </div>
-              <div class="midle-block d-flex justify-content-center. col-md d-none">
-                <p class="footer-text. col-md d-none">Сертифікат відповідності</p>
+              <div class="midle-block d-flex justify-content-center d-md-none">
+                <p class="footer-text col-md d-none">Сертифікат відповідності</p>
               </div>
-              <div class="midle-block d-flex justify-content-center. col-md d-none">
-                <p class="footer-text. col-md d-none">Договір-оферта</p>
+              <div class="midle-block d-flex justify-content-center d-md-none">
+                <p class="footer-text col-md d-none">Договір-оферта</p>
               </div>
             </div>
             
             <!--3-Footer-->
-            <div class="col-lg-4 d-flex col-md-12">
-              <div class="col-lg-1. col-md-1 d-none phone-img2">
+            <div class="col-lg-4 d-lg-flex d-none mt-3">
+              <div class="phone-img2">
                 <img src="src/img/telephone.svg" />
               </div>
-              <div class="col-lg-11 d-block. col-md-6 d-none footer-text">
+              <div class="footer-text">
                 <p>(044) 365 45 60</p>
                 <p>(068) 777 45 60</p>
                 <p>(063) 777 45 60</p>
