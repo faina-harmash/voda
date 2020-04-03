@@ -21,7 +21,48 @@
     <!--NAVIGATION-->
 
     <header>
-      <div class="main-nav">
+      <!-- Navigation for XL -->
+      <div class="main-nav d-sm-none d-md-none d-lg-none d-flex">
+        <div class="logo-position">
+          <img src="src/img/navigation_logo.svg" />
+        </div>
+        <div class="middle-nav d-flex">
+          <div class="middle-right-nav d-flex">
+            <a href=#block-1 class="p-nawigation active">Головна</a>
+            <a href=#block-2 class="p-nawigation d-md-inline d-none d-lg-none active">Про нас</a>
+            <a href=#block-3 class="p-nawigation active">Вода</a>
+            <a href=#karta class="p-nawigation active">Зона доставки</a>
+            <a href=#block-5 class="p-nawigation active">Контакти</a>
+          </div>
+          <div class="middle-left-nav">
+            <p class="p-nawigation__grafik">
+              Графік роботи:<br />Щоденно з 9:00 до 21:00
+            </p>
+          </div>
+          <button class="blue-button">Замовити воду</button>
+        </div>
+        <div class="right-navigation">
+          <div class="orange-stripe"></div>
+          <select class="select-object">
+            <option>UK</option>
+            <option>RU</option>
+          </select>
+          <div class="phone-img">
+            <img src="src/img/telephone.svg" />
+          </div>
+          <select class="select-object">
+            <option>(044) 365-45-60</option>
+            <option>(068) 777 45 60</option>
+            <option>(063) 777 45 60</option>
+            <option>(066) 777 45 60</option>
+          </select>
+        </div>
+        <!-- main nav -->
+      </div>
+      <!-- End of Navigation for XL -->
+
+      <!-- Navigation for LG and other -->
+      <div class="main-nav d-xl-none d-flex">
         <div class="logo-position">
           <img src="src/img/navigation_logo.svg" />
         </div>
@@ -41,8 +82,7 @@
         </div>
         <!-- End STRIPES -->
         <div class="navbar-collapse collapse" id="main_menu">
-
-
+          <!-- Middle Navigation -->
           <div class="middle-nav d-flex flex-column">
             <div class="middle-right-nav d-flex flex-column">
               <a href=#block-1 class="p-nawigation active">Головна</a>
@@ -57,10 +97,8 @@
               </p>
             </div>
             <button class="blue-button">Замовити воду</button>
-          
-        
-
-
+            
+            <!-- Right Navigation -->
         <div class="right-navigation">
           <div class="orange-stripe"></div>
           <select class="select-object">
@@ -77,7 +115,9 @@
             <option>(066) 777 45 60</option>
           </select>
         </div>
+        <!--End of Right Navigation -->
       </div>
+      <!--End of Middle Navigation -->
       </div>
       </div>
     </header>

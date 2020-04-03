@@ -264,14 +264,7 @@ li a {
   line-height: 31px;
   font-weight: bold;
   text-decoration: none;
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#49b2e3+0,4d74aa+100 */
-  background: #49b2e3; /* Old browsers */
-  background: -moz-linear-gradient(left, #49b2e3 0%, #4d74aa 100%);
-  background: -webkit-linear-gradient(left, #49b2e3 0%, #4d74aa 100%);
-  background: linear-gradient(to right, #49b2e3 0%, #4d74aa 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#49b2e3', endColorstr='#4d74aa',GradientType=1 ); /* IE6-9 */
-  /* -webkit-background-clip: text; */
-  -webkit-text-fill-color: transparent;
+  color: #1758a3;
 }
 
 .bottle-block {
@@ -281,6 +274,7 @@ li a {
 .bottle-block > img {
   position: absolute;
   overflow: visible;
+  width: 100%;
 }
 .txt-center {
   text-align: center;
@@ -678,6 +672,15 @@ li a {
   .b3-title {
     margin-top: 0px;
     margin-bottom: 10px;
+  }
+
+  .karta {
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+
+  .orange-text {
+    margin-top: 0px;
   }
 }
 /* END OF MAX-WIDTH 768 */

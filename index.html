@@ -24,7 +24,48 @@
     <!--NAVIGATION-->
 
     <header>
-      <div class="main-nav">
+       <!-- Navigation for XL -->
+       <div class="main-nav d-xl-flex d-none">
+        <div class="logo-position">
+          <img src="src/img/navigation_logo.svg" />
+        </div>
+        <div class="middle-nav d-flex">
+          <div class="middle-right-nav d-flex">
+            <a href=#block-1 class="p-nawigation active">Головна</a>
+            <a href=#block-2 class="p-nawigation d-md-inline d-none d-lg-none active">Про нас</a>
+            <a href=#block-3 class="p-nawigation active">Вода</a>
+            <a href=#karta class="p-nawigation active">Зона доставки</a>
+            <a href=#block-5 class="p-nawigation active">Контакти</a>
+          </div>
+          <div class="middle-left-nav">
+            <p class="p-nawigation__grafik">
+              Графік роботи:<br />Щоденно з 9:00 до 21:00
+            </p>
+          </div>
+          <button class="blue-button">Замовити воду</button>
+        </div>
+        <div class="right-navigation">
+          <div class="orange-stripe"></div>
+          <select class="select-object">
+            <option>UK</option>
+            <option>RU</option>
+          </select>
+          <div class="phone-img">
+            <img src="src/img/telephone.svg" />
+          </div>
+          <select class="select-object">
+            <option>(044) 365-45-60</option>
+            <option>(068) 777 45 60</option>
+            <option>(063) 777 45 60</option>
+            <option>(066) 777 45 60</option>
+          </select>
+        </div>
+        <!-- main nav -->
+      </div>
+      <!-- End of Navigation for XL -->
+
+      <!-- Navigation for LG and other -->
+      <div class="main-nav d-xl-none d-flex">
         <div class="logo-position">
           <img src="src/img/navigation_logo.svg" />
         </div>
@@ -99,12 +140,12 @@
                 Протягом 2-х годин після оформлення замовлення
               </div>
             </div>
-            <div class="bl-1-button d-xl-block d-lg-block d-md-block d-none">
+            <div class="bl-1-button d-md-block d-none">
               <a href="#">Замовити воду</a>
             </div>
           </div>
           <div class="col-lg-6 bottle-block mt-5">
-            <img src="src/img/bottles.png" class="d-xl-block d-lg-block d-md-block d-none"/>
+            <img src="src/img/bottles.png" class="d-xl-block d-lg-block d-md-block d-none pt-5"/>
             <img src="src/img/voda_mobile.png" class="d-xl-none d-lg-none d-md-none d-block"/>
           </div>
           <div class="col-lg-12 txt-center">
@@ -128,34 +169,72 @@
             </div>
           </div>
           <!--Block-2-part-2-->
-          <div class="col-lg-3">
-            <div class="bl-2-item">
-              <div><img src="src/img/2h.png" alt="2 hour" /></div>
-              <div class="bl-2-text">
-                Оперативна доставка протягом 2-х годин
+
+          <div class="col-xl-12 d-xl-flex col-lg-12 d-lg-flex d-none">
+            <div class="col-lg-3">
+              <div class="bl-2-item">
+                <div><img src="src/img/2h.png" alt="2 hour" /></div>
+                <div class="bl-2-text">
+                  Оперативна доставка протягом 2-х годин
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="bl-2-item">
+                <div>
+                  <img src="src/img/free-delivery.png" alt="free-delivery" />
+                </div>
+                <div class="bl-2-text">
+                  Безкоштовна доставка води від 1 бутля
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="bl-2-item">
+                <div class="ring"><img src="src/img/ring.png" alt="7/365" />
+                  <div class="ring_number"><div>7</div><div class="hyphen">-</div> <div>365</div></div>
+                </div>
+                <div class="bl-2-text">
+                  Доставка 7 днів на тиждень
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="bl-2-item">
-              <div>
-                <img src="src/img/free-delivery.png" alt="free-delivery" />
+
+          <div class="col-xl-12 d-xl-none col-lg-12 d-lg-none d-block">
+            <div class="col-md-12">
+              <div class="bl-2-item">
+                <div><img src="src/img/2h.png" alt="2 hour" /></div>
+                <div class="bl-2-text">
+                  Оперативна доставка протягом 2-х годин
+                </div>
               </div>
-              <div class="bl-2-text">
-                Безкоштовна доставка води від 1 бутля
+            </div>
+            <div class="col-md-12 d-flex">
+              <div class="col-md-6">
+                <div class="bl-2-item">
+                  <div>
+                    <img src="src/img/free-delivery.png" alt="free-delivery" />
+                  </div>
+                  <div class="bl-2-text">
+                    Безкоштовна доставка води від 1 бутля
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="bl-2-item">
+                  <div class="ring"><img src="src/img/ring.png" alt="7/365" />
+                    <div class="ring_number"><div>7</div><div class="hyphen">-</div> <div>365</div></div>
+                  </div>
+                  <div class="bl-2-text">
+                    Доставка 7 днів на тиждень
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-3">
-            <div class="bl-2-item">
-              <div class="ring"><img src="src/img/ring.png" alt="7/365" />
-                <div class="ring_number"><div>7</div><div class="hyphen">-</div> <div>365</div></div>
-              </div>
-              <div class="bl-2-text">
-                Доставка 7 днів на тиждень
-              </div>
-            </div>
-          </div>
+
+
         </div>
       </div>
     </div>
@@ -245,45 +324,95 @@
             </div>
           </div>
           <!--Block-4-part-2-->
-          <div class="col-lg-3">
-            <div class="bl-2-item">
-              <div>
-                <img
-                  src="src/img/8steps.png"
-                  alt="8 steps to clean the water"
-                />
+          <div class="col-xl-12 d-xl-flex col-lg-12 d-lg-flex d-none">
+            <div class="col-lg-3">
+              <div class="bl-2-item">
+                <div>
+                  <img
+                    src="src/img/8steps.png"
+                    alt="8 steps to clean the water"
+                  />
+                </div>
+                <div class="bl-2-text">
+                  8 этапів очистки води
+                </div>
               </div>
-              <div class="bl-2-text">
-                8 этапів очистки води
+            </div>
+            <div class="col-lg-3">
+              <div class="bl-2-item">
+                <div>
+                  <img src="src/img/kysen.png" alt="kysen" />
+                </div>
+                <div class="bl-2-text">
+                  Збагачення киснем
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="bl-2-item">
+                <div><img src="src/img/garantia.png" alt="quality" /></div>
+                <div class="bl-2-text">
+                  Гарантія якості
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="bl-2-item">
+                <div><img src="src/img/skwazina.png" alt="skwazina" /></div>
+                <div class="bl-2-text">
+                  Скважина юрского горизонту 293м.
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-3">
-            <div class="bl-2-item">
-              <div>
-                <img src="src/img/kysen.png" alt="kysen" />
+          <div class="col-xl-12 d-xl-none col-lg-12 d-lg-none d-block">
+            <div class="col-md-12 d-flex">
+              <div class="col-md-6">
+                <div class="bl-2-item">
+                  <div>
+                    <img
+                      src="src/img/8steps.png"
+                      alt="8 steps to clean the water"
+                    />
+                  </div>
+                  <div class="bl-2-text">
+                    8 этапів очистки води
+                  </div>
+                </div>
               </div>
-              <div class="bl-2-text">
-                Збагачення киснем
+              <div class="col-md-6">
+                <div class="bl-2-item">
+                  <div>
+                    <img src="src/img/kysen.png" alt="kysen" />
+                  </div>
+                  <div class="bl-2-text">
+                    Збагачення киснем
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="bl-2-item">
-              <div><img src="src/img/garantia.png" alt="quality" /></div>
-              <div class="bl-2-text">
-                Гарантія якості
+
+
+           <div class="col-md-12 d-flex">
+              <div class="col-md-6">
+                <div class="bl-2-item">
+                  <div><img src="src/img/garantia.png" alt="quality" /></div>
+                  <div class="bl-2-text">
+                    Гарантія якості
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="bl-2-item">
+                  <div><img src="src/img/skwazina.png" alt="skwazina" /></div>
+                  <div class="bl-2-text">
+                    Скважина юрского горизонту 293м.
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="bl-2-item">
-              <div><img src="src/img/skwazina.png" alt="skwazina" /></div>
-              <div class="bl-2-text">
-                Скважина юрского горизонту 293м.
-              </div>
-            </div>
-          </div>
+           </div>
+          
         </div>
       </div>
     </div>
@@ -306,11 +435,21 @@
 
       <!--Delivery-->
       
-          <div class="karta">
+          <div class="karta d-xl-block d-lg-block d-md-block d-none">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162757.72582760116!2d30.392608836420333!3d50.40217023835161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2sKyiv%2C%2002000!5e0!3m2!1sen!2sua!4v1580397936247!5m2!1sen!2sua"
               width="100%"
               height="556px"
+              frameborder="0"
+              style="border:0;"
+              allowfullscreen=""
+            ></iframe>
+          </div>
+          <div class="karta d-xl-none d-lg-none d-md-none d-block">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162757.72582760116!2d30.392608836420333!3d50.40217023835161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2sKyiv%2C%2002000!5e0!3m2!1sen!2sua!4v1580397936247!5m2!1sen!2sua"
+              width="100%"
+              height="425px"
               frameborder="0"
               style="border:0;"
               allowfullscreen=""
