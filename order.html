@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk=UA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Оперативна доставка води в бутлях" />
+    <title>order-voda.express</title>
+    <link rel="stylesheet" href="src/css/bootstrap-grid.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Exo+2:400,500,600|Montserrat:400,500,600|amily=Cardo:400i|Exo:400,500|Open+Sans:700|Raleway:400,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/order.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <main class="col-lg-10 d-flex align-self-center">
+          <div col-lg-6 class="inner">
+            <div class="inner_left">
+              <h3>Кількість пляшок в замовленні</h3>
+              <div>
+                <button id="minus-bottle" class="quantity">-</button>
+                <p id="bottle-quantity">0</p>
+                <button id="plus-bottle" class="quantity">+</button>
+              </div>
+              <h3>Кількість порожніх на обмін</h3>
+              <div>
+                <button id="minus-empty" class="quantity">-</button>
+                <p id="empty-quantity">0</p>
+                <button id="plus-empty" class="quantity">+</button>
+              </div>
+            </div>
+          </div>
+          <div col-lg-6 class="inner">
+            <div>
+              <h2>Cума замовлення</h2>
+              <p><span id="total-price">0</span> грн</p>
+              <div>
+                <h3>Ціна за 1 бутель <span id="bottle-price">95</span>грн</h3>
+                <p><span id="total-bottle-price">0</span> грн</p>
+              </div>
+              <div>
+                <h3>Заставна вартість за бутель</h3>
+                <p><span id="total-empty-bottle-price">0</span> грн</p>
+              </div>
+            </div>
+          </div>
+          <a col-lg-8 href="contact.html" class="btn">Далі</a>
+        </main>
+      </div>
+    </div>
+  </body>
+  <script src="/src/js/order.js"></script>
+</html>

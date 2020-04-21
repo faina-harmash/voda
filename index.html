@@ -14,6 +14,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/css/global.css" />
+    <link rel="stylesheet" href="src/css/hover.css" />
     <link
       rel="shortcut icon"
       href="src/icon/icon.png"
@@ -42,7 +43,7 @@
               Графік роботи:<br />Щоденно з 9:00 до 21:00
             </p>
           </div>
-          <button class="blue-button">Замовити воду</button>
+          <a href="order.html" target="_blank" class="blue-button">Замовити воду</a>
         </div>
         <div class="right-navigation">
           <div class="orange-stripe"></div>
@@ -200,11 +201,11 @@
               </div>
             </div>
           </div>
-
           <div class="col-xl-12 d-xl-none col-lg-12 d-lg-none d-block">
             <div class="col-md-12">
               <div class="bl-2-item">
-                <div><img src="src/img/2h.png" alt="2 hour" /></div>
+              <div class="d-flex d-md-none"><img src="src/img/img_mobile/2h.png" alt="car" /></div>
+              <div class="d-none d-md-flex"><img src="src/img/2h.png" alt="car" /></div>
                 <div class="bl-2-text">
                   Оперативна доставка протягом 2-х годин
                 </div>
@@ -213,9 +214,10 @@
             <div class="col-md-12 d-flex">
               <div class="col-md-6">
                 <div class="bl-2-item">
-                  <div>
+                  <div class="d-none d-md-flex">
                     <img src="src/img/free-delivery.png" alt="free-delivery" />
                   </div>
+                  <div class="d-flex d-md-none"><img src="src/img/img_mobile/free.png" alt="free-delivery" /></div>
                   <div class="bl-2-text">
                     Безкоштовна доставка води від 1 бутля
                   </div>
@@ -223,9 +225,14 @@
               </div>
               <div class="col-md-6">
                 <div class="bl-2-item">
-                  <div class="ring"><img src="src/img/ring.png" alt="7/365" />
-                    <div class="ring_number"><div>7</div><div class="hyphen">-</div> <div>365</div></div>
+                  <div  class="ring"><img src="src/img/ring.png" class="d-none d-md-flex" alt="7/365" />
+                    <div class="ring_number">
+                      <div class="d-none d-md-block">7</div>
+                      <div class="d-none d-md-block" class="hyphen">-</div> 
+                      <div class="d-none d-md-block">365</div>
+                    </div>
                   </div>
+                  <div class="d-flex d-md-none"><img src="src/img/img_mobile/week.png" alt="7/365" /></div>
                   <div class="bl-2-text">
                     Доставка 7 днів на тиждень
                   </div>
@@ -233,8 +240,6 @@
               </div>
             </div>
           </div>
-
-
         </div>
       </div>
     </div>
@@ -327,7 +332,7 @@
           <div class="col-xl-12 d-xl-flex col-lg-12 d-lg-flex d-none">
             <div class="col-lg-3">
               <div class="bl-2-item">
-                <div>
+                <div class="d-none d-md-flex">
                   <img
                     src="src/img/8steps.png"
                     alt="8 steps to clean the water"
@@ -369,9 +374,15 @@
             <div class="col-md-12 d-flex">
               <div class="col-md-6">
                 <div class="bl-2-item">
-                  <div>
+                  <div class="d-none d-md-flex">
                     <img
                       src="src/img/8steps.png"
+                      alt="8 steps to clean the water"
+                    />
+                  </div>
+                  <div class="d-flex d-md-none">
+                    <img
+                      src="src/img/img_mobile/8.png"
                       alt="8 steps to clean the water"
                     />
                   </div>
@@ -382,8 +393,14 @@
               </div>
               <div class="col-md-6">
                 <div class="bl-2-item">
-                  <div>
+                  <div class="d-none d-md-flex">
                     <img src="src/img/kysen.png" alt="kysen" />
+                  </div>
+                  <div class="d-flex d-md-none">
+                    <img
+                      src="src/img/img_mobile/kysen.png"
+                      alt="8 kysenr"
+                    />
                   </div>
                   <div class="bl-2-text">
                     Збагачення киснем
@@ -396,7 +413,13 @@
            <div class="col-md-12 d-flex">
               <div class="col-md-6">
                 <div class="bl-2-item">
-                  <div><img src="src/img/garantia.png" alt="quality" /></div>
+                  <div class="d-none d-md-flex"><img src="src/img/garantia.png" alt="quality" /></div>
+                  <div class="d-flex d-md-none">
+                    <img
+                      src="src/img/img_mobile/garantie.png"
+                      alt="garantia"
+                    />
+                  </div>
                   <div class="bl-2-text">
                     Гарантія якості
                   </div>
@@ -404,7 +427,13 @@
               </div>
               <div class="col-md-6">
                 <div class="bl-2-item">
-                  <div><img src="src/img/skwazina.png" alt="skwazina" /></div>
+                  <div class="d-none d-md-flex"><img src="src/img/skwazina.png" alt="skwazina" /></div>
+                  <div class="d-flex d-md-none">
+                    <img
+                      src="src/img/img_mobile/skwazina.png"
+                      alt="skwazina"
+                    />
+                  </div>
                   <div class="bl-2-text">
                     Скважина юрского горизонту 293м.
                   </div>
@@ -495,11 +524,8 @@
             style="display: flex;
             justify-content: space-evenly; margin-top:30px;"
           >
-            <div style>
-              <div class="bl-4-button">
-                <a href="#">Замовити на сайті</a>
-              </div>
-
+            <div>
+                <div class="bl-4-button"><a href="#">Замовити на сайті </a></div>
             </div>
             <!-- <div class="stripe-position"> -->
             <div class="vertical-stripe"></div>
@@ -514,6 +540,7 @@
       </div>
       <!--Footer-->
       <div id="footer" class="footer-color">
+        <div class="top">&#11014;</div>
         <div class="container">
           <div class="row justify-space-around">
             <!--1-Footer-->
@@ -559,6 +586,7 @@
     <!--End-Block-->
     <script src="src/js/jquery.js"></script>
     <script src="src/js/bootstrap.bundle.js"></script>
+    <script src="src/js/global.js"></script>
   </body>
   
 </html>

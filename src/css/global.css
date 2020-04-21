@@ -21,6 +21,9 @@ h2 {
   color: #445071;
   font-family: "Exo 2";
 }
+button:hover {
+  background: #ffa21d;
+}
 #block-1 {
   background: linear-gradient(
     180deg,
@@ -83,6 +86,9 @@ li a {
   text-align: center;
   color: #445071;
 }
+.p-nawigation:hover {
+  text-decoration: none;
+}
 .p-nawigation__grafik {
   margin-right: 45px;
   font-family: "Exo 2";
@@ -121,9 +127,7 @@ li a {
 }
 
 .blue-button {
-  margin-right: 15px;
-  width: 156px;
-  height: 38px;
+  padding: 10px;
   background: linear-gradient(
     90deg,
     #49b2e3 0%,
@@ -256,15 +260,39 @@ li a {
   padding: 17px 41px;
   background: #ffffff;
   border-radius: 16px;
-}
-.bl-1-button > a {
+  width: 70%;
+  text-align: center;
+  font-family: "Exo 2";
   font-size: 26px;
   line-height: 31px;
   font-size: 26px;
   line-height: 31px;
   font-weight: bold;
   text-decoration: none;
-  color: #1758a3;
+  background: linear-gradient(
+    90deg,
+    #49b2e3 0%,
+    #45a7d5 17%,
+    #479bce 33%,
+    #4990c4 41%,
+    #4a89be 50%,
+    #4b84ba 67%,
+    #4c7cb3 83%,
+    #4d74aa 100%
+  );
+}
+
+.bl-1-button > a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  text-decoration: none;
+  color: white;
+  background: #ffa21d;
+}
+.bl-1-button:hover {
+  background: #ffa21d;
 }
 
 .bottle-block {
@@ -525,6 +553,23 @@ li a {
   border-radius: 16px;
   color: white;
 }
+.bl-4-button:hover {
+  background: linear-gradient(
+    90deg,
+    #49b2e3 0%,
+    #45a7d5 17%,
+    #479bce 33%,
+    #4990c4 41%,
+    #4a89be 50%,
+    #4b84ba 67%,
+    #4c7cb3 83%,
+    #4d74aa 100%
+  );
+}
+.bl-4-button a:hover {
+  background-color: none;
+}
+
 .bl-4-button > a {
   font-size: 26px;
   line-height: 31px;
@@ -565,6 +610,9 @@ li a {
 }
 
 /*--Footer--*/
+#footer {
+  position: relative;
+}
 .footer-color {
   background-color: whitesmoke;
   margin-top: 90px;
@@ -586,6 +634,18 @@ li a {
   font-size: 24px;
   line-height: 29px;
   color: #445071;
+}
+.top {
+  font-size: 50px;
+  position: absolute;
+  top: 0%;
+  left: 92%;
+  border-radius: 16px;
+}
+.top:hover {
+  background-color: orange;
+  color: orangered;
+  cursor: pointer;
 }
 
 /* MEDIA */
@@ -633,10 +693,13 @@ li a {
     display: block;
   }
 
+  .p-nawigation {
+    margin-bottom: 15px;
+  }
+
   /* Block 1 */
   .bottle-block > img {
-    width: 450px;
-    height: 400px;
+    /* width: 50%; */
   }
   /* Voda */
   .bottle-direction {
@@ -682,6 +745,11 @@ li a {
   .orange-text {
     margin-top: 0px;
   }
+  .top {
+    font-size: 40px;
+    top: 0%;
+    left: 92%;
+  }
 }
 /* END OF MAX-WIDTH 768 */
 
@@ -693,6 +761,9 @@ li a {
     text-align: center;
     color: #445071;
     font-family: "Exo 2";
+  }
+  .bottle-block > img {
+    width: 50%;
   }
   .orange-text {
     font-size: 15px;
@@ -746,5 +817,30 @@ li a {
   .karta {
     margin-top: 20px;
     margin-bottom: 60px;
+  }
+  .top {
+    top: 0%;
+    left: 87%;
+  }
+  .top {
+    font-size: 30px;
+    top: 0%;
+    left: 90%;
+  }
+}
+@media (max-width: 375px) {
+  .bottle-block {
+    display: none;
+  }
+  .bl-4-button {
+    padding: 8px 8px;
+  }
+  .vertical-stripe {
+    height: 50px;
+  }
+  .top {
+    font-size: 30px;
+    top: 0%;
+    left: 90%;
   }
 }
